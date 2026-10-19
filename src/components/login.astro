@@ -1,0 +1,116 @@
+---
+import google from "../assets/google.jpg";
+import Logo from "./logo.astro";
+---
+
+<div class="login">
+    <div class="inicio">
+        <Logo />
+        <h1>Welcome Back</h1>
+    </div>
+
+    <form>
+        <div class="form">
+            <input type="text" placeholder="User" disabled />
+
+            <input type="password" placeholder="Password" disabled />
+        </div>
+        <div class="form1">
+            <button class="entrar" type="button" disabled> Log in </button>
+
+            <button type="button" class="google" disabled>
+                <img src={google.src} alt="Google" width="25" />
+                Login with Google
+            </button>
+        </div>
+    </form>
+</div>
+
+<style>
+
+    .form{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+
+    .inicio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form1{
+
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .login {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        box-sizing: border-box;
+        gap: 100px;
+    }
+
+    h1{
+        text-align: center;
+        font-size:35px;
+        font-weight: 300px;
+    }
+
+    form {
+        width: 100%;
+        max-width: 350px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    input {
+        padding: 14px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 16px;
+        background: #efecec;
+    }
+
+    input:disabled {
+        opacity: 1;
+        color: #333;
+        cursor: default;
+    }
+
+    button {
+        padding: 14px;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+    }
+
+    .entrar {
+        background: #0e7327;
+        color: white;
+    }
+
+    .google {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border: 1px solid #ccc;
+        background: white;
+        color: #222;
+    }
+
+    button:disabled {
+        opacity: 1;
+        cursor: default;
+    }
+</style>

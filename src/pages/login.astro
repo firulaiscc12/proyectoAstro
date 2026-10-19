@@ -1,0 +1,19 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Login from "../components/login.astro";
+import ImagenLogin from "../components/imagenlogin.astro";
+---
+
+<Layout>
+    <div class="pagina">
+        <Login />
+        <ImagenLogin />
+    </div>
+</Layout>
+
+<style>
+    .pagina {
+        display: flex;
+        min-height: 100vh;
+    }
+</style>

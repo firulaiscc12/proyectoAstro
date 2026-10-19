@@ -1,0 +1,117 @@
+---
+import Logo from "./logo.astro";
+import articulo from "../assets/articulo.jpg";
+---
+
+<div class="tienda">
+    <div class="barra">
+        <div class="lado"></div>
+        <Logo />
+        <div class="lado derecha">
+            <input type="text" placeholder="BUSCAR" />
+        </div>
+    </div>
+
+    <div class="fila">
+        <div class="producto">
+            <img src={articulo.src} alt="Abrigo largo pliegue espalda" />
+            <p class="nombre">Abrigo largo pliegue espalda</p>
+            <p class="precio">59,99 €</p>
+        </div>
+        <div class="producto">
+            <img src={articulo.src} alt="Abrigo largo pliegue pecho" />
+            <p class="nombre">Abrigo largo pliegue pecho</p>
+            <p class="precio">59,99 €</p>
+        </div>
+        <div class="producto">
+            <img src={articulo.src} alt="Abrigo acolchado extralargo" />
+            <p class="nombre">Abrigo acolchado extralargo</p>
+            <p class="precio">49,99 €</p>
+        </div>
+        <div class="producto">
+            <img src={articulo.src} alt="Gabardina vaquera" />
+            <p class="nombre">Gabardina vaquera</p>
+            <p class="precio">69,99 €</p>
+        </div>
+    </div>
+
+    <div class="fila">
+        <div class="producto">
+            <img src={articulo.src} alt="Abrigo paño" />
+            <p class="nombre">Abrigo paño</p>
+            <p class="precio">29,99 €</p>
+        </div>
+        <div class="producto">
+            <img src={articulo.src} alt="Abrigo acolchado capucha" />
+            <p class="nombre">Abrigo acolchado capucha</p>
+            <p class="precio">49,99 €</p>
+        </div>
+        <div class="producto">
+            <img src={articulo.src} alt="Abrigo borreguillo" />
+            <p class="nombre">Abrigo borreguillo</p>
+            <p class="precio">19,99 €</p>
+        </div>
+        <div class="producto">
+            <img src={articulo.src} alt="Jeans skinny rotos" />
+            <p class="nombre">Jeans skinny rotos</p>
+            <p class="precio">9,99 €</p>
+        </div>
+    </div>
+</div>
+
+<style>
+    .tienda {
+        padding: 40px 80px;
+    }
+
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    .lado {
+        width: 30px;
+        height: 30px;
+    }
+
+    .derecha {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    input {
+        width: 250px;
+        padding: 10px;
+        font-size: 18px;
+        font-weight: 600;
+        border: 1px solid gray;
+        border-radius: 4px;
+    }
+
+    .fila {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 60px;
+    }
+
+    .producto {
+        flex: 1;
+    }
+
+    .producto img {
+        width: 100%;
+        height: 480px;
+        object-fit: cover;
+    }
+
+    p {
+        margin: 5px 0;
+        text-align: center;
+        color: #555555;
+    }
+
+    .precio {
+        font-weight: 600;
+    }
+</style>
