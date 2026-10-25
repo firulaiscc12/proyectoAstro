@@ -11,15 +11,15 @@ import Logo from "./logo.astro";
 
     <form>
         <div class="form">
-            <input type="text" placeholder="User" disabled />
+            <input type="text" placeholder="User" />
 
-            <input type="password" placeholder="Password" disabled />
+            <input type="password" placeholder="Password" />
         </div>
         <div class="form1">
-            <button class="entrar" type="button" disabled> Log in </button>
+            <button class="entrar" type="submit"> Log in </button>
 
-            <button type="button" class="google" disabled>
-                <img src={google.src} alt="Google" width="25" />
+            <button type="submit" class="google">
+                <img src={google.src} alt="Google" class="imgoole" />
                 Login with Google
             </button>
         </div>
@@ -27,13 +27,26 @@ import Logo from "./logo.astro";
 </div>
 
 <style>
+    button{
+        cursor: pointer;
+    }
+    .entrar:active {
+        background: #0a5a1e;
+    }
 
-    .form{
+    .google:active {
+        background: #eeeeee;
+    }
+
+    .imgoogle {
+        width: 20px;
+    }
+
+    .form {
         display: flex;
         flex-direction: column;
         gap: 30px;
     }
-
 
     .inicio {
         display: flex;
@@ -42,8 +55,7 @@ import Logo from "./logo.astro";
         align-items: center;
     }
 
-    .form1{
-
+    .form1 {
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -59,9 +71,9 @@ import Logo from "./logo.astro";
         gap: 100px;
     }
 
-    h1{
+    h1 {
         text-align: center;
-        font-size:35px;
+        font-size: 35px;
         font-weight: 300px;
     }
 

@@ -1,6 +1,7 @@
 ---
 import Logo from "./logo.astro";
 import articulo from "../assets/articulo.jpg";
+import productos from "../data/productos.json";
 ---
 
 <div class="tienda">
@@ -13,49 +14,15 @@ import articulo from "../assets/articulo.jpg";
     </div>
 
     <div class="fila">
-        <div class="producto">
-            <img src={articulo.src} alt="Abrigo largo pliegue espalda" />
-            <p class="nombre">Abrigo largo pliegue espalda</p>
-            <p class="precio">59,99 €</p>
-        </div>
-        <div class="producto">
-            <img src={articulo.src} alt="Abrigo largo pliegue pecho" />
-            <p class="nombre">Abrigo largo pliegue pecho</p>
-            <p class="precio">59,99 €</p>
-        </div>
-        <div class="producto">
-            <img src={articulo.src} alt="Abrigo acolchado extralargo" />
-            <p class="nombre">Abrigo acolchado extralargo</p>
-            <p class="precio">49,99 €</p>
-        </div>
-        <div class="producto">
-            <img src={articulo.src} alt="Gabardina vaquera" />
-            <p class="nombre">Gabardina vaquera</p>
-            <p class="precio">69,99 €</p>
-        </div>
-    </div>
-
-    <div class="fila">
-        <div class="producto">
-            <img src={articulo.src} alt="Abrigo paño" />
-            <p class="nombre">Abrigo paño</p>
-            <p class="precio">29,99 €</p>
-        </div>
-        <div class="producto">
-            <img src={articulo.src} alt="Abrigo acolchado capucha" />
-            <p class="nombre">Abrigo acolchado capucha</p>
-            <p class="precio">49,99 €</p>
-        </div>
-        <div class="producto">
-            <img src={articulo.src} alt="Abrigo borreguillo" />
-            <p class="nombre">Abrigo borreguillo</p>
-            <p class="precio">19,99 €</p>
-        </div>
-        <div class="producto">
-            <img src={articulo.src} alt="Jeans skinny rotos" />
-            <p class="nombre">Jeans skinny rotos</p>
-            <p class="precio">9,99 €</p>
-        </div>
+        {
+            productos.map((producto) => (
+                <div class="producto">
+                    <img src={articulo.src} alt={producto.nombre} />
+                    <p class="nombre">{producto.nombre}</p>
+                    <p class="precio">{producto.precio}</p>
+                </div>
+            ))
+        }
     </div>
 </div>
 
@@ -91,12 +58,13 @@ import articulo from "../assets/articulo.jpg";
 
     .fila {
         display: flex;
+        flex-wrap: wrap;
         gap: 15px;
-        margin-bottom: 60px;
     }
 
     .producto {
-        flex: 1;
+        flex: 0 0 calc((100% - 45px) / 4);
+        margin-bottom: 45px;
     }
 
     .producto img {
