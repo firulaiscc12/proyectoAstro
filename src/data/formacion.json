@@ -1,0 +1,15 @@
+[{
+        "periodo": "2020 - 2022",
+        "centro": "CIFP Francesc Borja Moll",
+        "texto": "Entre 2020 y 2022 cursé mis estudios en el CIFP Francesc Borja Moll, titulándome como Técnico en Actividades Comerciales. Esta apasionante etapa formativa me otorgó una base sólida en la gestión empresarial, el comercio y los procesos de negocio. Allí desarrollé competencias esenciales en organización, estrategia y una comunicación corporativa eficaz y cercana",
+        "estudios": "Estudiante en Actividades Comerciales - Grado Medio",
+        "imagen": "/formacion/cifp.jpg"
+    },
+    {
+        "periodo": "2025 - Cursando",
+        "centro": "Santa Joaquina de Vedruna",
+        "texto": "Actualmente cursando el 2.º año del Grado Superior en Desarrollo de Aplicaciones Web en el centro Santa Joaquina de Vedruna. Enfocado en la creación de soluciones digitales integrales, abarcando tanto el desarrollo frontend como backend. Con sólidos conocimientos en lógica de programación, gestión de bases de datos y arquitecturas web modernas, orientado a incorporarme al sector tecnológico y aportar valor en proyectos de desarrollo real.",
+        "estudios": "Estudiante de Desarrollo de Aplicaciones Web - Grado Superior",
+        "imagen": "/formacion/vedruna.jpg"
+    }
+]
