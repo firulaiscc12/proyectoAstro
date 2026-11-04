@@ -1,69 +1,92 @@
 ---
-import danicoffe from "../assets/danicoffe.png"
+import danicoffe from "../assets/danicoffe.png";
+import flechacirculo from "../assets/circulo-de-flecha.png";
 ---
 
-<div class="contenedor1">
+<div class="contenedor1" id="inicio">
     <div class="izquierda">
-        <h1><span class="dani">Bienvenidos a mi portfolio, soy Dani</span><br> Desarrolador <span class="web">web</span>
-            <br><span class="junior">junior</span></h1>
-        <button>Conóceme más</button>
+        <h1>
+            <span class="dani">Bienvenidos a mi portfolio, soy Dani</span><br /> Desarrolador
+            <span class="web"> web</span>
+            <br /><span class="junior">junior</span>
+        </h1>
+        <div class="botonesp">
+            <a class="boton" href="#sobre-mi">
+                Conóceme más <img src={flechacirculo.src} class="circulofle" />
+            </a>
+        </div>
     </div>
     <div class="derecha">
-        <img src={danicoffe.src} class="danicoffe">
+        <img src={danicoffe.src} class="danicoffe" />
     </div>
 </div>
 
 <style>
-
+    .circulofle {
+        height: 30px;
+    }
     .contenedor1 {
-       display: flex;
-    padding: 0 3.15rem;
-    justify-content: space-between;
-    align-items: center;
-    height: 90vh;
-    position: relative;
-    background: url(../assets/portada.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+        display: flex;
+        padding: 0 3.15rem;
+        justify-content: space-between;
+        align-items: center;
+        height: 90vh;
+        position: relative;
+        background: url(../assets/portada.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
-    .dani{
+    .dani {
         font-size: 20px;
         color: white;
         font-weight: lighter;
     }
 
-    .web{
-        color: aqua;
+    .web {
+        color: #00c8ff;
     }
 
-    .junior{
-        color: yellow;
+    .junior {
+        color: #ffb700;
     }
 
-    h1{
+    h1 {
         font-size: 60px;
         color: white;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family:
+            system-ui,
+            -apple-system,
+            BlinkMacSystemFont,
+            "Segoe UI",
+            Roboto,
+            Oxygen,
+            Ubuntu,
+            Cantarell,
+            "Open Sans",
+            "Helvetica Neue",
+            sans-serif;
     }
 
-    button{
+    .boton {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
         padding: 10px 30px 10px 30px;
         border-radius: 30px;
-        background: yellow;
-        border: none;
+        background: #ffb700;
+        color: black;
+        text-decoration: none;
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        font-weight: bold;
     }
 
-    
-    .danicoffe{
+    .danicoffe {
         height: 250px;
         position: absolute;
         bottom: 0px;
         right: 0px;
     }
-
-
-
-
 </style>

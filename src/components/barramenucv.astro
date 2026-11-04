@@ -1,27 +1,30 @@
 ---
-import logoCV from "../assets/logoCV.png";
+import logocv from "../assets/logooCV.png";
 ---
-
 
 <div class="barra">
     <div class="logo">
-        <a href=""><img src={logoCV.src} alt="" class="logoo"></a>
+        <a href="#inicio"><img src={logocv.src} alt="" class="logoo" /></a>
     </div>
     <div class="opciones">
-        <a href="">Inicio</a>
-        <a href="">Sobre mi</a>
-        <a href="">Experiencia</a>
-        <a href="">Proyectos</a>
-        <a href="">Contacto</a>
+        <a href="#inicio">Inicio</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#formacion">Formación</a>
+        <a href="#sobremi">Sobre mí</a>
+        <a href="#contacto">Contacto</a>
     </div>
 </div>
 
 <style>
-
     .logoo {
         height: 80px;
     }
+
     .barra {
+        position: sticky; 
+        top: 0;
+        z-index: 100; 
         height: 70px;
         background: #202226;
         display: flex;
@@ -30,14 +33,13 @@ import logoCV from "../assets/logoCV.png";
         padding: 0 3.5rem;
     }
 
-    .logo a{
+    .logo a {
         color: white;
         text-decoration: none;
         font-size: 25px;
-        
     }
 
-    .opciones{
+    .opciones {
         display: flex;
         gap: 30px;
     }
@@ -45,5 +47,9 @@ import logoCV from "../assets/logoCV.png";
     .opciones a {
         color: white;
         text-decoration: none;
+    }
+
+    .opciones a:hover {
+        color: #ffb700;
     }
 </style>
