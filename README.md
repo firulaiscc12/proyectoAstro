@@ -1,46 +1,62 @@
-# Astro Starter Kit: Basics
+# Curriculum
 
-```sh
-npm create astro@latest -- --template basics
-```
+Web personal de currículum / portfolio hecha con [Astro](https://astro.build). Presenta mi experiencia, proyectos, formación y datos de contacto en una sola página, dividida en componentes con HTML y CSS básico.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Secciones
 
-## 🚀 Project Structure
+- **Barra de menú y portada**: presentación inicial.
+- **Experiencia**: trabajos y prácticas realizados.
+- **Proyectos**: tarjetas con título, descripción, imagen y enlace.
+- **Formación**: estudios cursados y en curso.
+- **Sobre mí**: texto de presentación y tarjeta personal.
+- **Contacto**: datos de contacto y pie de página.
 
-Inside of your Astro project, you'll see the following folders and files:
+## Estructura del proyecto
 
 ```text
 /
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
+├── public/                  # favicon
+├── src/
+│   ├── assets/              # imágenes
+│   ├── components/          # un componente por parte de cada sección
+│   ├── data/                # contenido en JSON
+│   │   ├── experiencia.json
+│   │   ├── formacion.json
+│   │   └── proyectos.json
+│   ├── layouts/
+│   │   └── Layout.astro
+│   └── pages/
+│       └── index.astro      # página principal que une todos los componentes
+├── astro.config.mjs
 └── package.json
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## Tecnologías
 
-## 🧞 Commands
+- Astro
+- HTML y CSS (estilos dentro de cada componente con `<style>`)
+- Datos en archivos JSON
 
-All commands are run from the root of the project, from a terminal:
+## Cómo ejecutarlo
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Necesitas Node.js 22.12.0 o superior.
 
-## 👀 Want to learn more?
+```sh
+npm install
+npm run dev
+```
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Después abre `http://localhost:4321` en el navegador.
+
+## Comandos
+
+| Comando           | Acción                                        |
+| :---------------- | :-------------------------------------------- |
+| `npm install`     | Instala las dependencias                      |
+| `npm run dev`     | Arranca el servidor local en `localhost:4321` |
+| `npm run build`   | Genera la web final en `./dist/`              |
+| `npm run preview` | Previsualiza la build en local                |
+
+## Autor
+
+Dani — estudiante de 2.º de Desarrollo de Aplicaciones Web (Santa Joaquina de Vedruna).
