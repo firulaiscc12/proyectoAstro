@@ -3,20 +3,17 @@ import danicoffe from "../assets/danicoffe.png";
 import flechacirculo from "../assets/circulo-de-flecha.png";
 ---
 
-<div class="contenedor1">
+<div class="contenedor1" id="inicio">
     <div class="izquierda">
         <h1>
             <span class="dani">Bienvenidos a mi portfolio, soy Dani</span><br /> Desarrolador
             <span class="web"> web</span>
             <br /><span class="junior">junior</span>
         </h1>
-        <div class=" botonesp">
-            <button
-                >Conóceme más <img
-                    src={flechacirculo.src}
-                    class="circulofle"
-                /></button
-            >
+        <div class="botonesp">
+            <a class="boton" href="#sobre-mi">
+                Conóceme más <img src={flechacirculo.src} class="circulofle" />
+            </a>
         </div>
     </div>
     <div class="derecha">
@@ -72,11 +69,17 @@ import flechacirculo from "../assets/circulo-de-flecha.png";
             sans-serif;
     }
 
-    button {
+    .boton {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
         padding: 10px 30px 10px 30px;
         border-radius: 30px;
         background: #ffb700;
-        border: none;
+        color: black;
+        text-decoration: none;
+        font-family: Arial, sans-serif;
+        font-size: 13px;
         font-weight: bold;
     }
 

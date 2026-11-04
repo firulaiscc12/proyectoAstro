@@ -2,6 +2,7 @@
 import formacion from "../data/formacion.json";
 import borja from "../assets/borjamoll.jpg";
 import vedruna from "../assets/vedruna.webp";
+import flecha from "../assets/flechaamarilla.png";
 ---
 
 <div class="fondo">
@@ -25,7 +26,7 @@ import vedruna from "../assets/vedruna.webp";
                 <div class="abajo">
                     <span>{formacion[0].estudios}</span>
                     <a class="saber" href="#">
-                        Saber más <img src="/iconos/flecha.png" alt="" />
+                        Saber más <img src={flecha.src} alt="" />
                     </a>
                 </div>
             </div>
@@ -46,7 +47,7 @@ import vedruna from "../assets/vedruna.webp";
                 <div class="abajo">
                     <span>{formacion[1].estudios}</span>
                     <a class="saber" href="#">
-                        Saber más <img src="/iconos/flecha.png" alt="" />
+                        Saber más <img src={flecha.src} alt="" />
                     </a>
                 </div>
             </div>
