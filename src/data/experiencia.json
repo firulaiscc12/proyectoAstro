@@ -1,0 +1,49 @@
+[{
+        "empresa": "Hotel Riu Playa Park",
+        "puesto": "Camarero",
+        "tipo": "Full time",
+        "periodo": "2026 - 2026",
+        "logo": "/logos/riu.png",
+        "personaje": "/personajes/personaje1.png"
+    },
+    {
+        "empresa": "Funky Burguer & brunch",
+        "puesto": "Camarero",
+        "tipo": "Full time",
+        "periodo": "2025 - 2026",
+        "logo": "/logos/funky.png",
+        "personaje": "/personajes/personaje2.png"
+    },
+    {
+        "empresa": "El Badulaque",
+        "puesto": "Camarero",
+        "tipo": "Full time",
+        "periodo": "2025 - 2025",
+        "logo": "/logos/badulaque.png",
+        "personaje": "/personajes/personaje3.png"
+    },
+    {
+        "empresa": "Salt & Sugar Cafeteria",
+        "puesto": "Camarero",
+        "tipo": "Full time",
+        "periodo": "2024 - 2025",
+        "logo": "/logos/saltsugar.png",
+        "personaje": "/personajes/personaje4.png"
+    },
+    {
+        "empresa": "Burguer King",
+        "puesto": "Ay/Cocina",
+        "tipo": "Full time",
+        "periodo": "2023 - 2024",
+        "logo": "/logos/burguerking.png",
+        "personaje": "/personajes/personaje5.png"
+    },
+    {
+        "empresa": "Toys \"R\" Us",
+        "puesto": "Ay/Dependiente",
+        "tipo": "Practicas",
+        "periodo": "2022 - 2022",
+        "logo": "/logos/toysrus.png",
+        "personaje": "/personajes/personaje6.png"
+    }
+]

@@ -1,0 +1,243 @@
+---
+import experiencia from "../data/experiencia.json";
+import  copia1 from "../assets/caopia1.png";
+import copia2 from "../assets/copia2.png";
+import copia3 from "../assets/copia3.png";
+import copia4 from "../assets/copia4.png";
+import copia5 from "../assets/copia5.png";
+import copia6 from "../assets/copia6.png";
+import copia7 from "../assets/copia7.png";
+import copia8 from "../assets/copia8.png";
+import logoriu from "../assets/logoriu.jpg";
+import saltsugar from "../assets/saltsugar.jpg";
+import badulaque from "../assets/badulaque.jpg";
+import toy from "../assets/bk_rebrand_stills_vi_1_logo-1024x576.jpg";
+
+
+---
+
+<div class="fondo">
+    <div class="linea-tiempo">
+        <div class="fila">
+            <div class="personaje">
+                <img src={copia1.src} alt="" />
+            </div>
+            <div class="tarjeta">
+                <img
+                    class="logo"
+                    src={}
+                    alt={experiencia[0].empresa}
+                />
+                <div class="texto">
+                    <h3>{experiencia[0].empresa}</h3>
+                    <p>{experiencia[0].puesto} - {experiencia[0].tipo}</p>
+                </div>
+                <span class="periodo">{experiencia[0].periodo}</span>
+                <a class="flecha" href="#">↗</a>
+            </div>
+        </div>
+
+
+        <div class="fila derecha">
+            <div class="tarjeta">
+                <img
+                    class="logo"
+                    src={experiencia[1].logo}
+                    alt={experiencia[1].empresa}
+                />
+                <div class="texto">
+                    <h3>{experiencia[1].empresa}</h3>
+                    <p>{experiencia[1].puesto} - {experiencia[1].tipo}</p>
+                </div>
+                <span class="periodo">{experiencia[1].periodo}</span>
+                <a class="flecha" href="#">↗</a>
+            </div>
+            <div class="personaje">
+                <img src={experiencia[1].personaje} alt="" />
+            </div>
+        </div>
+
+
+        <div class="fila">
+            <div class="personaje">
+                <img src={experiencia[2].personaje} alt="" />
+            </div>
+            <div class="tarjeta">
+                <img
+                    class="logo"
+                    src={experiencia[2].logo}
+                    alt={experiencia[2].empresa}
+                />
+                <div class="texto">
+                    <h3>{experiencia[2].empresa}</h3>
+                    <p>{experiencia[2].puesto} - {experiencia[2].tipo}</p>
+                </div>
+                <span class="periodo">{experiencia[2].periodo}</span>
+                <a class="flecha" href="#">↗</a>
+            </div>
+        </div>
+
+
+        <div class="fila derecha">
+            <div class="tarjeta">
+                <img
+                    class="logo"
+                    src={experiencia[3].logo}
+                    alt={experiencia[3].empresa}
+                />
+                <div class="texto">
+                    <h3>{experiencia[3].empresa}</h3>
+                    <p>{experiencia[3].puesto} - {experiencia[3].tipo}</p>
+                </div>
+                <span class="periodo">{experiencia[3].periodo}</span>
+                <a class="flecha" href="#">↗</a>
+            </div>
+            <div class="personaje">
+                <img src={experiencia[3].personaje} alt="" />
+            </div>
+        </div>
+
+
+        <div class="fila">
+            <div class="personaje">
+                <img src={experiencia[4].personaje} alt="" />
+            </div>
+            <div class="tarjeta">
+                <img
+                    class="logo"
+                    src={experiencia[4].logo}
+                    alt={experiencia[4].empresa}
+                />
+                <div class="texto">
+                    <h3>{experiencia[4].empresa}</h3>
+                    <p>{experiencia[4].puesto} - {experiencia[4].tipo}</p>
+                </div>
+                <span class="periodo">{experiencia[4].periodo}</span>
+                <a class="flecha" href="#">↗</a>
+            </div>
+        </div>
+
+
+        <div class="fila derecha">
+            <div class="tarjeta">
+                <img
+                    class="logo"
+                    src={experiencia[5].logo}
+                    alt={experiencia[5].empresa}
+                />
+                <div class="texto">
+                    <h3>{experiencia[5].empresa}</h3>
+                    <p>{experiencia[5].puesto} - {experiencia[5].tipo}</p>
+                </div>
+                <span class="periodo">{experiencia[5].periodo}</span>
+                <a class="flecha" href="#">↗</a>
+            </div>
+            <div class="personaje">
+                <img src={experiencia[5].personaje} alt="" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+
+    .fondo {
+        background: #1a1f1c;
+        padding: 60px 3.5rem;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .linea-tiempo {
+        position: relative;
+        max-width: 900px;
+        margin: 0 auto;
+        color: white;
+        font-family: system-ui, sans-serif;
+    }
+
+
+    .linea-tiempo::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background: #2e4a4a;
+    }
+
+    .fila {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 35px;
+    }
+
+    .derecha {
+        justify-content: flex-end;
+    }
+
+
+    .personaje {
+        width: 90px;
+        height: 110px;
+    }
+
+    .personaje img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+
+    .tarjeta {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        width: 60%;
+        padding: 14px 16px;
+        background: #2b2a2a;
+        border-radius: 8px;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: white;
+    }
+
+    .texto {
+        flex: 1;
+    }
+
+    .texto h3 {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .texto p {
+        margin: 2px 0 0;
+        font-size: 12px;
+        color: #ccc;
+    }
+
+    .periodo {
+        font-size: 11px;
+        color: #ccc;
+    }
+
+    .flecha {
+        width: 26px;
+        height: 26px;
+        background: orange;
+        color: black;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 26px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+</style>
