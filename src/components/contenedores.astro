@@ -1,6 +1,6 @@
 ---
 import experiencia from "../data/experiencia.json";
-import  copia1 from "../assets/caopia1.png";
+import copia1 from "../assets/caopia1.png";
 import copia2 from "../assets/copia2.png";
 import copia3 from "../assets/copia3.png";
 import copia4 from "../assets/copia4.png";
@@ -11,21 +11,21 @@ import copia8 from "../assets/copia8.png";
 import logoriu from "../assets/logoriu.jpg";
 import saltsugar from "../assets/saltsugar.jpg";
 import badulaque from "../assets/badulaque.jpg";
-import toy from "../assets/bk_rebrand_stills_vi_1_logo-1024x576.jpg";
-
-
+import funky from "../assets/funky.jpg";
+import burguer from "../assets/burguer.jpg";
+import toy from "../assets/toy.jpg";
 ---
 
 <div class="fondo">
     <div class="linea-tiempo">
         <div class="fila">
             <div class="personaje">
-                <img src={copia1.src} alt="" />
+                <img src={copia2.src} alt="" />
             </div>
             <div class="tarjeta">
                 <img
                     class="logo"
-                    src={}
+                    src={logoriu.src}
                     alt={experiencia[0].empresa}
                 />
                 <div class="texto">
@@ -37,12 +37,11 @@ import toy from "../assets/bk_rebrand_stills_vi_1_logo-1024x576.jpg";
             </div>
         </div>
 
-
         <div class="fila derecha">
             <div class="tarjeta">
                 <img
                     class="logo"
-                    src={experiencia[1].logo}
+                    src={funky.src}
                     alt={experiencia[1].empresa}
                 />
                 <div class="texto">
@@ -53,19 +52,18 @@ import toy from "../assets/bk_rebrand_stills_vi_1_logo-1024x576.jpg";
                 <a class="flecha" href="#">↗</a>
             </div>
             <div class="personaje">
-                <img src={experiencia[1].personaje} alt="" />
+                <img src={copia7.src} alt="" />
             </div>
         </div>
 
-
         <div class="fila">
             <div class="personaje">
-                <img src={experiencia[2].personaje} alt="" />
+                <img src={copia5.src} alt="" />
             </div>
             <div class="tarjeta">
                 <img
                     class="logo"
-                    src={experiencia[2].logo}
+                    src={badulaque.src}
                     alt={experiencia[2].empresa}
                 />
                 <div class="texto">
@@ -77,12 +75,11 @@ import toy from "../assets/bk_rebrand_stills_vi_1_logo-1024x576.jpg";
             </div>
         </div>
 
-
         <div class="fila derecha">
             <div class="tarjeta">
                 <img
                     class="logo"
-                    src={experiencia[3].logo}
+                    src={saltsugar.src}
                     alt={experiencia[3].empresa}
                 />
                 <div class="texto">
@@ -93,19 +90,18 @@ import toy from "../assets/bk_rebrand_stills_vi_1_logo-1024x576.jpg";
                 <a class="flecha" href="#">↗</a>
             </div>
             <div class="personaje">
-                <img src={experiencia[3].personaje} alt="" />
+                <img src={copia3.src} alt="" />
             </div>
         </div>
 
-
         <div class="fila">
             <div class="personaje">
-                <img src={experiencia[4].personaje} alt="" />
+                <img src={copia1.src} alt="" />
             </div>
             <div class="tarjeta">
                 <img
                     class="logo"
-                    src={experiencia[4].logo}
+                    src={burguer.src}
                     alt={experiencia[4].empresa}
                 />
                 <div class="texto">
@@ -117,12 +113,11 @@ import toy from "../assets/bk_rebrand_stills_vi_1_logo-1024x576.jpg";
             </div>
         </div>
 
-
         <div class="fila derecha">
             <div class="tarjeta">
                 <img
                     class="logo"
-                    src={experiencia[5].logo}
+                    src={toy.src}
                     alt={experiencia[5].empresa}
                 />
                 <div class="texto">
@@ -133,14 +128,13 @@ import toy from "../assets/bk_rebrand_stills_vi_1_logo-1024x576.jpg";
                 <a class="flecha" href="#">↗</a>
             </div>
             <div class="personaje">
-                <img src={experiencia[5].personaje} alt="" />
+                <img src={copia8.src} alt="" />
             </div>
         </div>
     </div>
 </div>
 
 <style>
-
     .fondo {
         background: #1a1f1c;
         padding: 60px 3.5rem;
@@ -155,7 +149,6 @@ import toy from "../assets/bk_rebrand_stills_vi_1_logo-1024x576.jpg";
         color: white;
         font-family: system-ui, sans-serif;
     }
-
 
     .linea-tiempo::before {
         content: "";
@@ -178,9 +171,8 @@ import toy from "../assets/bk_rebrand_stills_vi_1_logo-1024x576.jpg";
         justify-content: flex-end;
     }
 
-
     .personaje {
-        width: 90px;
+        width: 60px;
         height: 110px;
     }
 
@@ -189,7 +181,6 @@ import toy from "../assets/bk_rebrand_stills_vi_1_logo-1024x576.jpg";
         height: 100%;
         object-fit: contain;
     }
-
 
     .tarjeta {
         position: relative;
