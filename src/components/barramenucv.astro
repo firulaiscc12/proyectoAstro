@@ -1,6 +1,11 @@
+---
+import logoCV from "../assets/logoCV.png";
+---
+
+
 <div class="barra">
     <div class="logo">
-        <a href="" class="logoo">Dani</a>
+        <a href=""><img src={logoCV.src} alt="" class="logoo"></a>
     </div>
     <div class="opciones">
         <a href="">Inicio</a>
@@ -12,6 +17,10 @@
 </div>
 
 <style>
+
+    .logoo {
+        height: 80px;
+    }
     .barra {
         height: 70px;
         background: #202226;
@@ -25,6 +34,7 @@
         color: white;
         text-decoration: none;
         font-size: 25px;
+        
     }
 
     .opciones{

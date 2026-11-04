@@ -1,0 +1,160 @@
+<div class="texto" id="sobremi">
+    <div class="titulo">
+        <div class="fila">
+            <div class="icono"><img src="/iconos/sobremi.png" alt="" /></div>
+            <h2>Un <span class="azul">poco</span></h2>
+            <div class="linea"></div>
+        </div>
+        <h2>sobre <span class="amarillo">mí</span></h2>
+    </div>
+
+    <h3>Perfil y forma de<br />trabajar</h3>
+    <p>
+        En el trabajo me considero una persona activa, proactiva y seria con mis
+        responsabilidades, pero siempre con un toque cercano y divertido para
+        hacer equipo. Afronto el desarrollo como un tablero de estrategia:
+        analizo el problema, planifico la arquitectura y busco la solución más
+        limpia y eficiente.
+    </p>
+
+    <h3>Fuera de la pantalla</h3>
+    <ul>
+        <li>
+            Juegos de estrategia: me apasiona poner a prueba la lógica y la
+            planificación.
+        </li>
+        <li>
+            Lectura y aprendizaje continuo: disfruto leyendo y estudiando temas
+            nuevos por mi cuenta.
+        </li>
+        <li>
+            En la cocina: me gusta ponerme el delantal. Al final, cocinar y
+            programar se parecen bastante: requieren la receta correcta, orden y
+            paciencia.
+        </li>
+    </ul>
+
+    <h3>Mi meta actual</h3>
+    <p>
+        En plena preparación para las prácticas (FCT) y listo para integrarme
+        como dev Junior en un equipo donde aportar iniciativa, aprender de
+        profesionales experimentados y dar el salto al sector tecnológico.
+    </p>
+
+    <div class="abajo">
+        <a class="boton" href="/cv.pdf" download>
+            Descargar CV <img src="/iconos/descargar.png" alt="" />
+        </a>
+        <img class="gato" src="/personajes/gato.png" alt="" />
+    </div>
+</div>
+
+<style>
+    .texto {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: white;
+        font-family: system-ui, sans-serif;
+    }
+
+    .titulo {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .fila {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .icono {
+        background: #ffc107;
+        border-radius: 10px;
+        width: 60px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icono img {
+        width: 32px;
+        height: 32px;
+    }
+
+    h2 {
+        margin: 0;
+        font-size: 55px;
+    }
+
+    .azul {
+        color: #00b4ff;
+    }
+
+    .amarillo {
+        color: #ffc107;
+    }
+
+    .linea {
+        width: 80px;
+        height: 2px;
+        background: #1fa88a;
+        margin-left: 10px;
+    }
+
+    h3 {
+        margin: 20px 0 0 0;
+        font-size: 20px;
+    }
+
+    p {
+        margin: 0;
+        font-size: 13px;
+        line-height: 1.5;
+        color: #cccccc;
+    }
+
+    ul {
+        margin: 0;
+        padding-left: 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 13px;
+        line-height: 1.5;
+        color: #cccccc;
+    }
+
+    .abajo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .boton {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background: #ffc107;
+        color: black;
+        text-decoration: none;
+        padding: 10px 25px;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .boton img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .gato {
+        height: 180px;
+    }
+</style>

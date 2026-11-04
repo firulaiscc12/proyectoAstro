@@ -1,3 +1,8 @@
+---
+import maleta from "../assets/maleta.png";
+import flecha from "../assets/flecha-correcta.png"
+---
+
 <div class="experiencia" id="experiencia">
     <div class="cuadro cuadro1"></div>
     <div class="cuadro cuadro2"></div>
@@ -6,7 +11,9 @@
 
     <div class="contenido">
         <div class="titulo">
-            <div class="icono">💼</div>
+            <div class="icono">
+                <img src={maleta.src} alt="" class="trabajo" />
+            </div>
             <h2>Experiencia <span class="profesional">Profesional</span></h2>
             <div class="linea"></div>
         </div>
@@ -22,6 +29,10 @@
 </div>
 
 <style>
+    .trabajo {
+        width: 24px;
+        height: 24px;
+    }
     .experiencia {
         background: #1a1f1c;
         padding: 60px 3.5rem;

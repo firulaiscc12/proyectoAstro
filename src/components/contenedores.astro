@@ -14,6 +14,7 @@ import badulaque from "../assets/badulaque.jpg";
 import funky from "../assets/funky.jpg";
 import burguer from "../assets/burguer.jpg";
 import toy from "../assets/toy.jpg";
+import flechadiagonal from "../assets/flecha-diagonal.png";
 ---
 
 <div class="fondo">
@@ -33,7 +34,9 @@ import toy from "../assets/toy.jpg";
                     <p>{experiencia[0].puesto} - {experiencia[0].tipo}</p>
                 </div>
                 <span class="periodo">{experiencia[0].periodo}</span>
-                <a class="flecha" href="#">↗</a>
+                <a class="flecha" href="#"
+                    ><img src={flechadiagonal.src} alt="" class="flechaa" /></a
+                >
             </div>
         </div>
 
@@ -49,7 +52,9 @@ import toy from "../assets/toy.jpg";
                     <p>{experiencia[1].puesto} - {experiencia[1].tipo}</p>
                 </div>
                 <span class="periodo">{experiencia[1].periodo}</span>
-                <a class="flecha" href="#">↗</a>
+                <a class="flecha" href="#"
+                    ><img src={flechadiagonal.src} alt="" class="flechaa" /></a
+                >
             </div>
             <div class="personaje">
                 <img src={copia7.src} alt="" />
@@ -71,7 +76,9 @@ import toy from "../assets/toy.jpg";
                     <p>{experiencia[2].puesto} - {experiencia[2].tipo}</p>
                 </div>
                 <span class="periodo">{experiencia[2].periodo}</span>
-                <a class="flecha" href="#">↗</a>
+                <a class="flecha" href="#"
+                    ><img src={flechadiagonal.src} alt="" class="flechaa" /></a
+                >
             </div>
         </div>
 
@@ -87,7 +94,9 @@ import toy from "../assets/toy.jpg";
                     <p>{experiencia[3].puesto} - {experiencia[3].tipo}</p>
                 </div>
                 <span class="periodo">{experiencia[3].periodo}</span>
-                <a class="flecha" href="#">↗</a>
+                <a class="flecha" href="#"
+                    ><img src={flechadiagonal.src} alt="" class="flechaa" /></a
+                >
             </div>
             <div class="personaje">
                 <img src={copia3.src} alt="" />
@@ -109,23 +118,23 @@ import toy from "../assets/toy.jpg";
                     <p>{experiencia[4].puesto} - {experiencia[4].tipo}</p>
                 </div>
                 <span class="periodo">{experiencia[4].periodo}</span>
-                <a class="flecha" href="#">↗</a>
+                <a class="flecha" href="#"
+                    ><img src={flechadiagonal.src} alt="" class="flechaa" /></a
+                >
             </div>
         </div>
 
         <div class="fila derecha">
             <div class="tarjeta">
-                <img
-                    class="logo"
-                    src={toy.src}
-                    alt={experiencia[5].empresa}
-                />
+                <img class="logo" src={toy.src} alt={experiencia[5].empresa} />
                 <div class="texto">
                     <h3>{experiencia[5].empresa}</h3>
                     <p>{experiencia[5].puesto} - {experiencia[5].tipo}</p>
                 </div>
                 <span class="periodo">{experiencia[5].periodo}</span>
-                <a class="flecha" href="#">↗</a>
+                <a class="flecha" href="#"
+                    ><img src={flechadiagonal.src} alt="" class="flechaa" /></a
+                >
             </div>
             <div class="personaje">
                 <img src={copia8.src} alt="" />
@@ -135,6 +144,9 @@ import toy from "../assets/toy.jpg";
 </div>
 
 <style>
+    .flechaa {
+        height: 11px;
+    }
     .fondo {
         background: #1a1f1c;
         padding: 60px 3.5rem;
