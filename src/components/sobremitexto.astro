@@ -1,7 +1,13 @@
+---
+import contacto from "../assets/contacto.png";
+import danineko from "../assets/Danineko.png";
+import descarga from "../assets/descarga.png";
+---
+
 <div class="texto" id="sobremi">
     <div class="titulo">
         <div class="fila">
-            <div class="icono"><img src="/iconos/sobremi.png" alt="" /></div>
+            <div class="icono"><img src={contacto.src} alt="" /></div>
             <h2>Un <span class="azul">poco</span></h2>
             <div class="linea"></div>
         </div>
@@ -43,9 +49,9 @@
 
     <div class="abajo">
         <a class="boton" href="/cv.pdf" download>
-            Descargar CV <img src="/iconos/descargar.png" alt="" />
+            Descargar CV <img src={descarga.src} alt="" />
         </a>
-        <img class="gato" src="/personajes/gato.png" alt="" />
+        <img class="gato" src={danineko.src} alt="" />
     </div>
 </div>
 

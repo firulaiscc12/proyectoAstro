@@ -1,39 +1,54 @@
+---
+import email from "../assets/Gmailamarillo.png";
+import git from "../assets/Gitamarillo.png";
+import flecha from "../assets/circulo-de-flecha.png";
+import ubicacion from "../assets/Ubicacion.png";
+import mensaje from "../assets/mensaje.png";
+import flecharec from "../assets/flecha-correcta.png";
+import contacto from "../assets/contactoo.png";
+---
+
 <div class="fondo">
     <div class="arriba">
         <div class="datos">
             <div class="dato">
-                <div class="icono"><img src="/iconos/email.png" alt="" /></div>
+                <div class="icono"><img src={email.src} alt="" /></div>
                 <div class="info">
                     <b>Email</b>
                     <p>floresalcocerdaniel12@gmail.com</p>
                 </div>
-                <a class="circulo" href="mailto:floresalcocerdaniel12@gmail.com">
-                    <img src="/iconos/flecha-circulo.png" alt="" />
+                <a
+                    class="circulo"
+                    href="mailto:floresalcocerdaniel12@gmail.com"
+                >
+                    <img src={flecha.src} alt="" />
                 </a>
             </div>
 
             <div class="dato">
-                <div class="icono"><img src="/iconos/github.png" alt="" /></div>
+                <div class="icono"><img src={git.src} alt="" /></div>
                 <div class="info">
                     <b>GitHub</b>
                     <p>https://github.com/dani12-Firulais</p>
                 </div>
                 <a class="circulo" href="https://github.com/dani12-Firulais">
-                    <img src="/iconos/flecha-circulo.png" alt="" />
+                    <img src={flecha.src} alt="" />
                 </a>
             </div>
 
             <div class="dato">
-                <div class="icono"><img src="/iconos/ubicacion.png" alt="" /></div>
+                <div class="icono">
+                    <img src={ubicacion.src} alt="" />
+                </div>
                 <div class="info">
                     <b>Ubicación</b>
                     <p>Sevilla, España</p>
                 </div>
-                <img class="flecha" src="/iconos/flecha.png" alt="" />
+                <img class="flecha" src={flecharec.src} alt="" />
             </div>
         </div>
 
-        <img class="personaje" src="/personajes/hablemos.png" alt="¡Hablemos!" />
+        <img class="personaje" src={contacto.src} alt="¡Hablemos!" />
     </div>
 
     <div class="banner">
@@ -44,9 +59,9 @@
         </div>
         <div class="separador"></div>
         <a class="boton" href="#">
-            <img src="/iconos/sobre.png" alt="" />
+            <img src={mensaje.src} alt="" />
             Enviar mensaje
-            <img src="/iconos/flecha-boton.png" alt="" />
+            <img src={flecharec.src} alt="" />
         </a>
     </div>
 </div>
@@ -112,7 +127,7 @@
     .circulo {
         width: 26px;
         height: 26px;
-        border: 2px solid #ffc107;
+        background: #ffc107;
         border-radius: 50%;
         display: flex;
         justify-content: center;
@@ -120,8 +135,8 @@
     }
 
     .circulo img {
-        width: 12px;
-        height: 12px;
+        width: 25px;
+        height: 25px;
     }
 
     .flecha {
