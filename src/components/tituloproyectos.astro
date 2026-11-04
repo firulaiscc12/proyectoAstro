@@ -1,10 +1,15 @@
+---
+import archivo from "../assets/carpeta.png";
+import flecha from "../assets/flecha-correcta.png";
+---
+
 <div class="fondo" id="proyectos">
     <div class="titulo">
-        <div class="icono"><img src="/iconos/proyectos.png" alt="" /></div>
+        <div class="icono"><img src={archivo.src} alt="" /></div>
         <h2>Proyectos <span class="azul">Realizados</span></h2>
         <div class="linea"></div>
         <a class="ver" href="#">
-            Ver todos los proyectos <img src="/iconos/flecha.png" alt="" />
+            Ver todos los proyectos <img src={flecha.src} alt="" />
         </a>
     </div>
     <p class="descripcion">

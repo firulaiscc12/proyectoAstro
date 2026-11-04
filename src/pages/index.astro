@@ -1,25 +1,46 @@
 ---
-import  Barramenucv  from "../components/barramenucv.astro";
-import  Layout  from "../layouts/Layout.astro";
-import  Portadacv  from "../components/portadacv.astro";
-import  Experiencia  from "../components/experiencia.astro";
+import Barramenucv from "../components/barramenucv.astro";
+import Layout from "../layouts/Layout.astro";
+import Portadacv from "../components/portadacv.astro";
+import Experiencia from "../components/experiencia.astro";
 import Contenedores from "../components/contenedores.astro";
-import  Tituloproyectos  from "../components/tituloproyectos.astro";
+import Tituloproyectos from "../components/tituloproyectos.astro";
 import Tarjetasproyecto from "../components/tarjetasproyecto.astro";
 import Tituloformacion from "../components/tituloformacion.astro";
 import Tarjetasformacion from "../components/tarjetasformacion.astro";
+import Sobremitexto from "../components/sobremitexto.astro";
+import Sobremitarjeta from "../components/sobremitarjeta.astro";
+import Titulocontacto from "../components/titulocontacto.astro";
+import Datoscontacto from "../components/datoscontacto.astro";
+import Piedepagina from "../components/piedepagina.astro";
 ---
 
 <Layout>
     <div>
-        <Barramenucv/>
-        <Portadacv/>
-        <Experiencia/>
-        <Contenedores/>
-        <Tituloproyectos/>
-        <Tarjetasproyecto/>
-        <Tituloformacion/>
-        <Tarjetasformacion/>
+        <Barramenucv />
+        <Portadacv />
+        <Experiencia />
+        <Contenedores />
+        <Tituloproyectos />
+        <Tarjetasproyecto />
+        <Tituloformacion />
+        <Tarjetasformacion />
+        <div class="sobremi">
+            <Sobremitexto />
+            <Sobremitarjeta />
+        </div>
+        <Titulocontacto/>
+        <Datoscontacto/>
+        <Piedepagina/>
     </div>
 </Layout>
 
+<style>
+    .sobremi {
+        display: flex;
+        align-items: center;
+        gap: 80px;
+        background: #1a1f1c;
+        padding: 60px 3rem 60px 6.5rem;
+    }
+</style>

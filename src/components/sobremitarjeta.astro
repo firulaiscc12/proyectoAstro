@@ -1,0 +1,101 @@
+
+
+<div class="tarjeta">
+    <img class="foto" src="/sobremi.png" alt="Sobre mí" />
+
+    <div class="bloque">
+        <div class="fila">
+            <h4>SKILLS</h4>
+            <span class="etiqueta"
+                ><img src="/iconos/html.png" alt="" /> HTML</span
+            >
+            <span class="etiqueta"
+                ><img src="/iconos/css.png" alt="" /> CSS</span
+            >
+            <span class="etiqueta"
+                ><img src="/iconos/javascript.png" alt="" /> JavaScript</span
+            >
+        </div>
+        <div class="fila">
+            <span class="etiqueta"
+                ><img src="/iconos/mysql.png" alt="" /> MySQL</span
+            >
+            <span class="etiqueta"
+                ><img src="/iconos/mongodb.png" alt="" /> MongoDB</span
+            >
+            <span class="etiqueta"
+                ><img src="/iconos/git.png" alt="" /> Git</span
+            >
+        </div>
+    </div>
+
+    <div class="bloque">
+        <h4>IDIOMAS</h4>
+        <div class="fila">
+            <span class="etiqueta"
+                ><img src="/iconos/espana.png" alt="" /> Español</span
+            >
+            <span class="etiqueta"
+                ><img src="/iconos/usa.png" alt="" /> Inglés</span
+            >
+        </div>
+    </div>
+</div>
+
+<style>
+    .tarjeta {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 50px 30px 90px 30px;
+        background: #1f2d27;
+        border: 1px solid #2a4a3c;
+        border-radius: 60px;
+        font-family: system-ui, sans-serif;
+    }
+
+    .foto {
+        width: 100%;
+        height: 700px;
+        object-fit: cover;
+        box-sizing: border-box;
+        border: 3px solid #1fa88a;
+        border-radius: 50px;
+    }
+
+    .bloque {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .fila {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    h4 {
+        margin: 0;
+        color: #00b4ff;
+        font-size: 17px;
+    }
+
+    .etiqueta {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 12px 22px;
+        background: #1b2722;
+        border: 1px solid #1fa88a;
+        border-radius: 30px;
+        color: white;
+        font-size: 15px;
+    }
+
+    .etiqueta img {
+        width: 22px;
+        height: 22px;
+    }
+</style>
