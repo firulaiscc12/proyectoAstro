@@ -1,5 +1,7 @@
 ---
 import formacion from "../data/formacion.json";
+import borja from "../assets/borjamoll.jpg";
+import vedruna from "../assets/vedruna.webp";
 ---
 
 <div class="fondo">
@@ -7,26 +9,47 @@ import formacion from "../data/formacion.json";
         <img class="personaje" src="/personajes/formacion.png" alt="" />
 
         <div class="lista">
-            {
-                formacion.map((estudio) => (
-                    <div class="tarjeta">
-                        <div class="arriba">
-                            <div class="texto">
-                                <span class="periodo">{estudio.periodo}</span>
-                                <h3>{estudio.centro}</h3>
-                                <p>{estudio.texto}</p>
-                            </div>
-                            <img class="imagen" src={estudio.imagen} alt={estudio.centro} />
-                        </div>
-                        <div class="abajo">
-                            <span>{estudio.estudios}</span>
-                            <a class="saber" href="#">
-                                Saber más <img src="/iconos/flecha.png" alt="" />
-                            </a>
-                        </div>
+            <div class="tarjeta">
+                <div class="arriba">
+                    <div class="texto">
+                        <span class="periodo">{formacion[0].periodo}</span>
+                        <h3>{formacion[0].centro}</h3>
+                        <p>{formacion[0].texto}</p>
                     </div>
-                ))
-            }
+                    <img
+                        class="imagen"
+                        src={borja.src}
+                        alt={formacion[0].centro}
+                    />
+                </div>
+                <div class="abajo">
+                    <span>{formacion[0].estudios}</span>
+                    <a class="saber" href="#">
+                        Saber más <img src="/iconos/flecha.png" alt="" />
+                    </a>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="arriba">
+                    <div class="texto">
+                        <span class="periodo">{formacion[1].periodo}</span>
+                        <h3>{formacion[1].centro}</h3>
+                        <p>{formacion[1].texto}</p>
+                    </div>
+                    <img
+                        class="imagen"
+                        src={vedruna.src}
+                        alt={formacion[1].centro}
+                    />
+                </div>
+                <div class="abajo">
+                    <span>{formacion[1].estudios}</span>
+                    <a class="saber" href="#">
+                        Saber más <img src="/iconos/flecha.png" alt="" />
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </div>

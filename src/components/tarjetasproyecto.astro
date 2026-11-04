@@ -1,29 +1,58 @@
 ---
 import proyectos from "../data/proyectos.json";
-import archivo from "../assets/carpeta.png";
+import eldenring from "../assets/Eldenring.jpg";
+import cineticket from "../assets/cineticket.jpg";
+import circulodeflecha from "../assets/circulo-de-flecha.png";
+import proyectoestetica from "../assets/proyectoestetica.jpg";
 ---
 
 <div class="fondo">
     <div class="contenido">
         <div class="fila">
-            {
-                proyectos.map((proyecto) => (
-                    <div class="tarjeta">
-                        <img
-                            class="imagen"
-                            src={proyecto.imagen}
-                            alt={proyecto.titulo}
-                        />
-                        <h3>{proyecto.titulo}</h3>
-                        <div class="abajo">
-                            <p>{proyecto.descripcion}</p>
-                            <a class="circulo" href={proyecto.enlace}>
-                                <img src="/iconos/flecha-circulo.png" alt="" />
-                            </a>
-                        </div>
-                    </div>
-                ))
-            }
+            <div class="tarjeta">
+                <img
+                    class="imagen"
+                    src={cineticket.src}
+                    alt={proyectos[0].titulo}
+                />
+                <h3>{proyectos[0].titulo}</h3>
+                <div class="abajo">
+                    <p>{proyectos[0].descripcion}</p>
+                    <a class="circulo" href={proyectos[0].enlace}>
+                        <img src={circulodeflecha.src} alt="" />
+                    </a>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <img
+                    class="imagen"
+                    src={proyectoestetica.src}
+                    alt={proyectos[1].titulo}
+                />
+                <h3>{proyectos[1].titulo}</h3>
+                <div class="abajo">
+                    <p>{proyectos[1].descripcion}</p>
+                    <a class="circulo" href={proyectos[1].enlace}>
+                        <img src={circulodeflecha.src} alt="" />
+                    </a>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <img
+                    class="imagen"
+                    src={eldenring.src}
+                    alt={proyectos[2].titulo}
+                />
+                <h3>{proyectos[2].titulo}</h3>
+                <div class="abajo">
+                    <p>{proyectos[2].descripcion}</p>
+                    <a class="circulo" href={proyectos[2].enlace}>
+                        <img src={circulodeflecha.src} alt="" />
+                    </a>
+                </div>
+            </div>
         </div>
 
         <img class="personaje" src="/personajes/proyectos.png" alt="" />
@@ -87,9 +116,9 @@ import archivo from "../assets/carpeta.png";
     }
 
     .circulo {
-        width: 28px;
-        height: 28px;
-        border: 2px solid #ffc107;
+        width: 50px;
+        height: 50px;
+        background: #ffb700;
         border-radius: 50%;
         display: flex;
         justify-content: center;
@@ -97,8 +126,7 @@ import archivo from "../assets/carpeta.png";
     }
 
     .circulo img {
-        width: 12px;
-        height: 12px;
+        height: 50px;
     }
 
     .personaje {

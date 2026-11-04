@@ -1,19 +1,19 @@
 [{
         "titulo": "MoviePass - Plataforma de reserva y emisión de tickets",
         "descripcion": "Desarrollo de una web que permite comprar entradas y gestionar tickets digitales con códigos QR mediante HTML, CSS y JavaScript.",
-        "imagen": "/proyectos/proyecto1.png",
+        "imagen": "../assets/cineticket.jpg",
         "enlace": "#"
     },
     {
         "titulo": "BookPay Core: Plataforma Integral de Reservas y Gestión de Transacciones",
         "descripcion": "Plataforma web full-stack desarrollada con Java, React y base de datos relacional, diseñada para automatizar flujos de reservas y procesamiento seguro de cobros en tiempo real.",
-        "imagen": "/proyectos/proyecto2.png",
+        "imagen": "../assets/Eldenring.jpg",
         "enlace": "#"
     },
     {
         "titulo": "The Lands Between Database & Summoning Engine",
         "descripcion": "Una plataforma interactiva en Python y MongoDB para gestionar, invocar y consultar una colección de datos RPG mediante comandos por consola.",
-        "imagen": "/proyectos/proyecto3.png",
+        "imagen": "../assets/proyectoestetica.jpg",
         "enlace": "#"
     }
 ]
